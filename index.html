@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#121212" />
+    <title>John Doe • Desainer & Developer Freelance</title>
+    <meta name="description" content="Portofolio desainer & developer freelance: situs web interaktif yang rapi dan ringan." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- Pratinjau saat tautan dibagikan (WhatsApp, LinkedIn, X, dll).
+         Setelah situs diunggah, ganti https://contoh.com dengan alamat situs Anda yang sebenarnya:
+         pratinjau media sosial butuh alamat gambar yang lengkap (absolut). -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="John Doe" />
+    <meta property="og:title" content="John Doe • Desainer & Developer Freelance" />
+    <meta property="og:description" content="Portofolio desainer & developer freelance: situs web interaktif yang rapi dan ringan." />
+    <meta property="og:image" content="https://contoh.com/og.png" />
+    <meta property="og:url" content="https://contoh.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="John Doe • Desainer & Developer Freelance" />
+    <meta name="twitter:image" content="https://contoh.com/og.png" />
+
+    <!-- Terapkan tema tersimpan sebelum halaman digambar, agar tidak berkedip. -->
+    <script>
+      try {
+        var t = localStorage.getItem('theme')
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
